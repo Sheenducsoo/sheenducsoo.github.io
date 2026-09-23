@@ -125,6 +125,81 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 	.project-thumbnail.project-blue img { object-fit: fill; }
 }
 
+/* Last mobile pass: keep both project cards inside the same readable gutter. */
+@media (max-width: 700px) {
+	.projects-section,
+	.project-list,
+	.project-row,
+	.project-row.reverse,
+	.project-name,
+	.project-description,
+	.project-thumbnail {
+		box-sizing: border-box;
+		max-width: 100%;
+		min-width: 0;
+		width: 100%;
+	}
+	.projects-section {
+		margin-left: 6vw !important;
+		margin-right: 6vw !important;
+		overflow: hidden;
+	}
+	.project-list {
+		overflow: visible;
+	}
+	.project-row,
+	.project-row.reverse {
+		align-items: stretch;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		margin: 0;
+		padding: 0 0 48px;
+	}
+	.project-thumbnail,
+	.project-row.reverse .project-thumbnail {
+		border-radius: 14px;
+		height: auto;
+		min-height: 0;
+		aspect-ratio: 1.55;
+		order: 1;
+	}
+	.project-thumbnail img {
+		height: calc(100% - 29px);
+		margin-top: 29px;
+		max-width: 100%;
+		width: 100%;
+	}
+	.project-name,
+	.project-row.reverse .project-name {
+		height: auto;
+		min-height: 0;
+		order: 2;
+		padding: 0;
+	}
+	.project-description {
+		border-radius: 16px;
+		margin: 0;
+		padding: 18px;
+	}
+	.project-description p {
+		max-width: none;
+		overflow-wrap: anywhere;
+	}
+	.project-tech {
+		box-sizing: border-box;
+		margin: 18px 0 0;
+		max-width: 100%;
+	}
+	.project-tech span {
+		max-width: 100%;
+		overflow-wrap: anywhere;
+	}
+	.project-name a.project-link {
+		margin-top: 20px;
+	}
+}
+
 /* Final mobile layout: one shared gutter and content-sized cards. */
 @media (max-width: 700px) {
 	:root { --mobile-gutter: 6vw; }
