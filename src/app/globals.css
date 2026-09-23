@@ -125,6 +125,98 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 	.project-thumbnail.project-blue img { object-fit: fill; }
 }
 
+.role-switcher {
+	top: 56px;
+}
+.photo-placeholder,
+.photo-placeholder img,
+.film-profile-photo .photo-placeholder,
+.film-profile-photo .photo-placeholder img {
+	border-radius: 30px;
+}
+.project-thumbnail.project-coral img {
+	object-fit: contain;
+	object-position: center;
+}
+.tool-group h3,
+.specialty-card h3,
+.project-name h3,
+.timeline-card h3,
+.academic-card h2,
+.academic-value h3 {
+	font-weight: 800;
+}
+.tool-group h3,
+.specialty-card h3 {
+	font-size: clamp(21px, 2.4vw, 28px);
+}
+.tool-group,
+.specialty-card,
+.project-row,
+.timeline-card,
+.academic-card {
+	transition: transform .45s cubic-bezier(.22, 1, .36, 1), box-shadow .45s ease, border-color .35s ease;
+}
+.scroll-reveal.is-visible.tool-group,
+.scroll-reveal.is-visible.specialty-card,
+.scroll-reveal.is-visible.project-row {
+	transform: scale(1.012);
+}
+.timeline-item.is-visible .timeline-card,
+.academic-card:hover,
+.tool-group:hover,
+.specialty-card:hover {
+	transform: scale(1.018);
+}
+
+@media (max-width: 700px) {
+	.side-nav {
+		padding-left: 6vw;
+		padding-right: 6vw;
+	}
+	.side-nav-list {
+		justify-content: center;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	.side-nav-list a {
+		flex: 0 0 auto;
+	}
+	.role-switcher {
+		top: 78px;
+	}
+	.hero {
+		padding-top: 174px;
+	}
+	.photo-placeholder,
+	.photo-placeholder img,
+	.film-profile-photo .photo-placeholder,
+	.film-profile-photo .photo-placeholder img {
+		border-radius: 30px;
+	}
+	.tool-group h3,
+	.specialty-card h3 {
+		font-size: 23px;
+		line-height: 1.05;
+	}
+	.project-thumbnail.project-coral img {
+		object-fit: contain;
+		object-position: center;
+	}
+	.scroll-reveal.is-visible.tool-group,
+	.scroll-reveal.is-visible.specialty-card,
+	.scroll-reveal.is-visible.project-row {
+		transform: scale(1.01);
+	}
+	.timeline-item.is-visible .timeline-card,
+	.academic-card:hover,
+	.tool-group:hover,
+	.specialty-card:hover {
+		transform: scale(1.01);
+	}
+}
+
 /* Last mobile pass: keep both project cards inside the same readable gutter. */
 @media (max-width: 700px) {
 	.projects-section,
