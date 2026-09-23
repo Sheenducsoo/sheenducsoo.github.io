@@ -33,6 +33,11 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Mark artifact as static site
+        run: |
+          touch out/.nojekyll
+          cp out/index.html out/404.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
