@@ -135,8 +135,15 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 	border-radius: 30px;
 }
 .project-thumbnail.project-coral img {
-	object-fit: contain;
-	object-position: center;
+	object-fit: cover;
+	object-position: left center;
+}
+.tool-group {
+	border-radius: 18px;
+	overflow: hidden;
+}
+.tool-group:hover {
+	transform: scale(1.045);
 }
 .tool-group h3,
 .specialty-card h3,
@@ -201,9 +208,11 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 		line-height: 1.05;
 	}
 	.project-thumbnail.project-coral img {
-		object-fit: contain;
-		object-position: center;
+		object-fit: cover;
+		object-position: left center;
 	}
+	.tool-group { border-radius: 18px; }
+	.tool-group:hover { transform: scale(1.025); }
 	.scroll-reveal.is-visible.tool-group,
 	.scroll-reveal.is-visible.specialty-card,
 	.scroll-reveal.is-visible.project-row {
