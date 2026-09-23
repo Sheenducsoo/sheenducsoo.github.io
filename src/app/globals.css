@@ -202,6 +202,13 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 	.scroll-reveal.is-visible { animation: none; }
 }
 
+/* Let the browser skip painting distant sections while scrolling. */
+.project-row,
+.timeline-item {
+	content-visibility: auto;
+	contain-intrinsic-size: 0 450px;
+}
+
 /* Final project action placement: never overlap the technology tags. */
 .project-name,
 .project-row.reverse .project-name { align-self: stretch; display: flex; flex-direction: column; height: 390px; position: static; }
