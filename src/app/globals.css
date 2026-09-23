@@ -125,6 +125,149 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 	.project-thumbnail.project-blue img { object-fit: fill; }
 }
 
+/* Final mobile layout: one shared gutter and content-sized cards. */
+@media (max-width: 700px) {
+	:root { --mobile-gutter: 6vw; }
+	body { overflow-x: hidden; }
+	.site-shell { width: 100%; }
+	.hero,
+	.intro-section,
+	.projects-section,
+	.timeline-section,
+	.values-section,
+	footer {
+		margin-left: var(--mobile-gutter) !important;
+		margin-right: var(--mobile-gutter) !important;
+		width: auto;
+	}
+	.hero {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.intro-section,
+	.projects-section,
+	.timeline-section,
+	.values-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.intro-grid,
+	.specialty-grid,
+	.tool-groups,
+	.academic-cards {
+		gap: 18px;
+		grid-template-columns: minmax(0, 1fr) !important;
+	}
+	.intro-photo,
+	.photo-placeholder,
+	.film-profile-photo,
+	.film-profile-photo .photo-placeholder {
+		margin-left: 0;
+		margin-right: 0;
+		width: 100% !important;
+	}
+	.photo-placeholder,
+	.film-profile-photo .photo-placeholder {
+		height: min(112vw, 420px);
+	}
+	.intro-copy,
+	.tools-area,
+	.tools-heading,
+	.tool-group,
+	.specialty-card,
+	.project-row,
+	.project-name,
+	.timeline-item,
+	.timeline-card,
+	.academic-card {
+		min-width: 0;
+		width: 100%;
+	}
+	.tools-area {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.specialty-card,
+	.tool-group,
+	.academic-card {
+		min-height: 0;
+	}
+	.specialty-card,
+	.tool-group,
+	.academic-card,
+	.timeline-card {
+		padding: 20px;
+	}
+	.project-row,
+	.project-row.reverse {
+		align-items: stretch;
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+		padding: 0 0 44px;
+	}
+	.project-row .project-number { display: none; }
+	.project-thumbnail,
+	.project-row.reverse .project-thumbnail {
+		height: min(62vw, 260px);
+		order: 1;
+		width: 100%;
+	}
+	.project-name,
+	.project-row.reverse .project-name {
+		height: auto;
+		min-height: 0;
+		order: 2;
+	}
+	.project-name h3 { font-size: clamp(27px, 8vw, 36px); }
+	.project-description { padding: 18px; }
+	.project-tech { gap: 7px; margin-bottom: 0; }
+	.project-tech span { padding: 8px 10px; }
+	.project-name a.project-link {
+		align-self: flex-start;
+		margin-top: 20px;
+		min-width: 0;
+	}
+	.timeline-list {
+		margin-left: 0;
+		padding-left: 28px;
+		width: 100%;
+	}
+	.timeline-list:before { left: 8px; }
+	.timeline-list:after { left: 7px; }
+	.timeline-item,
+	.timeline-item:nth-child(even),
+	.timeline-item:nth-child(odd) {
+		margin-left: 0;
+		padding: 0 0 28px;
+		width: 100%;
+	}
+	.timeline-node,
+	.timeline-item:nth-child(even) .timeline-node {
+		left: -26px;
+		right: auto;
+		top: 24px;
+	}
+	.timeline-card,
+	.timeline-item:nth-child(even) .timeline-card {
+		margin-left: 0;
+		max-width: none;
+		width: 100%;
+	}
+	.university-heading { gap: 14px; }
+	.university-logo { flex-basis: 54px; height: 54px; }
+	.university-copy h2 { font-size: 25px; }
+	.hero-actions {
+		align-items: stretch;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 280px;
+	}
+	.hero-button { width: 100%; }
+	footer { padding-left: 0; padding-right: 0; }
+}
+
 .project-name,
 .project-row.reverse .project-name {
 	align-self: stretch;
