@@ -186,6 +186,22 @@ footer { align-items: end; background: var(--ink); color: var(--paper); display:
 	}
 }
 
+/* Keep scroll content readable while the observer prepares its entrance animation. */
+.scroll-reveal {
+	opacity: 1;
+	transform: none;
+}
+.scroll-reveal.is-visible {
+	animation: scroll-content-in .35s ease both;
+}
+@keyframes scroll-content-in {
+	from { opacity: .78; transform: translateY(8px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+	.scroll-reveal.is-visible { animation: none; }
+}
+
 /* Final project action placement: never overlap the technology tags. */
 .project-name,
 .project-row.reverse .project-name { align-self: stretch; display: flex; flex-direction: column; height: 390px; position: static; }
