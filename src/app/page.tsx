@@ -169,7 +169,7 @@ export default function Home() {
 
       <section className="intro-section" id="sobre-mi">
         <div className="intro-grid">
-          <div className={`intro-photo`}><div className={`photo-placeholder ${photoLoaded ? "has-photo" : ""}`}>{photoLoaded ? <img src={profile === "film" ? "/projects/sheen-fernandez.png" : "/profile-photo.jpg"} alt="Retrato de Sheen Fernández" onError={() => setPhotoLoaded(false)} /> : <span>SF</span>}</div></div>
+          <div className={`intro-photo`}><div className={`photo-placeholder ${photoLoaded ? "has-photo" : ""}`}>{photoLoaded ? <img src={profile === "film" ? "/projects/fotoperfil.jpg" : "/profile-photo.jpg"} alt="Retrato de Sheen Fernández" onError={() => setPhotoLoaded(false)} /> : <span>SF</span>}</div></div>
           <div className="intro-copy"><p className="section-label">Acerca de mí</p><p>{content.intro}</p><div className="specialty-grid">{content.specialties.map((specialty) => <article className="specialty-card" key={specialty.title}><h3>{specialty.title}</h3><p>{specialty.text}</p></article>)}</div></div>
         </div>
         <div className="tools-area" id="herramientas"><div className="tools-heading scroll-reveal"><p className="section-label">Mis Herramientas</p><p>{content.toolsIntro}</p></div><div className="tool-groups">{content.toolGroups.map((group, index) => <article className={`tool-group scroll-reveal reveal-delay-${index + 1}`} key={group.title}><h3>{group.title}</h3><p>{group.note}</p><div className="tool-list">{group.tools.map((tool) => <span key={tool}>{tool}</span>)}</div></article>)}</div></div>
