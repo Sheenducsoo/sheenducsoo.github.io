@@ -29,7 +29,7 @@ const profileContent = {
     ],
     toolGroups: [
       { title: "Frontend", note: "Interfaces claras y responsivas.", tools: ["React", "TypeScript", "Next.js", "Tailwind CSS"] },
-      { title: "Backend & datos", note: "Servicios sólidos e integraciones.", tools: ["Node.js", "PostgreSQL", "Supabase", "MongoDB"] },
+      { title: "Backend & datos", note: "Servicios sólidos e integraciones.", tools: ["Node.js", "Python", "PostgreSQL", "Supabase", "MongoDB"] },
       { title: "Soporte & flujo", note: "Orden para trabajar mejor.", tools: ["Git / GitHub", "Automatización", "M365", "GitHub Copilot"] },
     ],
     education: "Ingeniería Civil Informática / Último año de carrera, con formación en desarrollo de software, sistemas y gestión de proyectos tecnológicos.",
@@ -41,7 +41,7 @@ const profileContent = {
     ],
     projects: [
       { number: "01", title: "Plataforma Web para Reportes comerciales", type: "Automatización", color: "project-coral", company: "AUTOMATIZACIÓN", description: "Landing page y pipeline de automatización para extraer y generar informes de datos operativos, eliminando tareas manuales y mejorando los tiempos y la precisión comercial.", technologies: ["Node.js", "Python", "Docker", "Render"], image: "/projects/Reporte-Polvotek.png", url: "#contacto" },
-      { number: "02", title: "Plataforma Web Stronger Human Podcast", type: "Desarrollo web", color: "project-blue", company: "DESARROLLO WEB", description: " Diseño y despliegue integral de una plataforma web completa, desde la conceptualización de la arquitectura hasta la implementación final, con navegación intuitiva e infraestructura estable.", technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"], image: "/projects/stronger-human.png", url: "https://strongerhuman.cl" },
+      { number: "02", title: "Plataforma Web Stronger Human Podcast", type: "Desarrollo web", color: "project-blue", company: "DESARROLLO WEB", description: " Diseño y despliegue integral de una plataforma web completa, desde la conceptualización de la arquitectura hasta la implementación final, con navegación intuitiva e infraestructura estable.", technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS"], image: "/projects/stronger-human1.png", url: "https://strongerhuman.cl" },
     ],
   },
   film: {
