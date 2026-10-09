@@ -55,8 +55,8 @@ const profileContent = {
       { title: "Edición con ritmo", text: "Encuentro la estructura de una historia en el montaje, desde el primer corte hasta la versión final." },
     ],
     toolGroups: [
-      { title: "Edición", note: "Montaje con ritmo y precisión.", tools: [ "DaVinci Resolve 20" , "Adobe Podcast","VN" ,"Cap Cut"] },
-      { title: "Dirección", note: "Herramientas de IA para generacion de Storytelling ", tools: ["Chatgpt", "Claude", "Ganchos Visuales","CTA"] },
+      { title: "Edición", note: "Montaje con ritmo y precisión.", tools: ["DaVinci Resolve 20", "Adobe Podcast", "VN", "Cap Cut"] },
+      { title: "Dirección", note: "Herramientas de IA para generacion de Storytelling ", tools: ["Chatgpt", "Claude", "Ganchos Visuales", "CTA"] },
       { title: "Producción", note: "Del plan de rodaje al corte final.", tools: ["Preproducción", "Rodaje", "Color", "Sonido"] },
     ],
     education: "Producción audiovisual / Formación práctica en dirección, edición, cámara y construcción de lenguaje visual.",
@@ -68,7 +68,7 @@ const profileContent = {
     ],
     projects: [
       { number: "01", title: "Dirección y producción de podcast", type: "Videopodcast", color: "project-violet", company: "DIRECCIÓN AUDIOVISUAL", description: " Liderazgo integral de un formato de entrevistas: dirección de arte, iluminación, audio profesional y edición multicámara para mantener la retención de la audiencia.", technologies: ["DaVinci Resolve 20", "Motion Graphics", "Guiones estructurados", "Audio"], image: "/projects/apodcast.png", url: "https://www.strongerhuman.cl/podcast" },
-      { number: "02", title: "Documentación y vlogs en terreno", type: "Contenido digital", color: "project-green", company: "PRODUCCIÓN VISUAL", description: "Registro de comunidades y eventos en distintas locaciones, adaptando el equipo a entornos impredecibles con storytelling fluido, documentación clara y cortes precisos.", technologies: ["Storytelling", "Documentación", "Rodaje", "Color"], image: "/projects/ProyectoVISUAL.png", url: "#contacto" },
+      { number: "02", title: "Documentación y vlogs en terreno", type: "Contenido digital", color: "project-green", company: "PRODUCCIÓN VISUAL", description: "Registro de comunidades y eventos en distintas locaciones, adaptando el equipo a entornos impredecibles con storytelling fluido, documentación clara y cortes precisos.", technologies: ["Storytelling", "Documentación", "Rodaje", "Color"], image: "/projects/ProyectoVISUAL.png", url: "https://www.youtube.com/@SheenStrongerHuman" },
     ],
   },
 } as const;
